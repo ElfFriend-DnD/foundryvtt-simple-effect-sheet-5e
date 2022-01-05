@@ -1,0 +1,53 @@
+<div class="flexrow">
+  <div class="flexcol">
+    <h2 class="flex0">Passive Effects</h2>
+    {{!-- <div class="flexrow">
+      <h3>Actor Effects</h3>
+    </div> --}}
+    
+    <div class="flexcol">
+
+      <h3 class="flex0">Item Effects</h3>
+      <ul>
+        {{#each passiveItemEffects}}
+        <li>{{data.label}} - {{sourceName}}</li>
+        {{/each}}
+      </ul>
+
+      <h4 class="flex0">Suppressed</h4>
+
+      <ol class="info flex0">
+        <li class="notification info">Source Item must be equipped or attuned to activate these</li>
+      </ol>
+      <ul>
+        {{#each inactivePassiveItemEffects}}
+        <li>{{data.label}} - {{sourceName}}</li>
+        {{/each}}
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="flexcol flex2">
+    <h2 class="flex0">Active Effects</h2>
+    
+    <div class="flexcol">
+      <h3 class="flex0">Self Effects</h3>
+
+      <ul>
+      {{#each selfActiveEffects}}
+        <li>{{data.label}} - {{sourceName}}</li>
+      {{/each}}
+      </ul>
+    </div>
+
+    <div class="flexcol">
+      <h3 class="flex0">Targeted Effects</h3>
+      <ul>
+      {{#each targetedActiveEffects}}
+        <li>{{data.label}} - {{sourceName}}</li>
+      {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+{
+  "simple-effect-sheet-5e": {
+    "MESSAGE_HEADER": "Attack Roll Results",
+    "HIT": "Hits",
+    "MISS": "Misses",
+    "CRITICAL": "Crits",
+    "FUMBLE": "Fumbles"
+  }
+}
